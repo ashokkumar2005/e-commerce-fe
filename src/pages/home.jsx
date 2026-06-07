@@ -6,7 +6,11 @@
     const [products,setProducts] = useState([]);
 
     useEffect(()=>{
+<<<<<<< HEAD
         API.get("/product")
+=======
+        API.get("/products")
+>>>>>>> d0dcddc928af89daa3c953c7b9ada1b5727eb434
         .then(res=>setProducts(res.data))
         .catch(err=>console.log(err));
     },[]);
